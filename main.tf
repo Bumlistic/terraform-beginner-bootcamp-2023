@@ -3,6 +3,13 @@
 # This is my 2nd change!
 
 terraform {
+  cloud {
+    organization = "Bumlistic"
+    workspaces {
+      name = "terra-house-1"
+    }
+  }
+
   required_providers {
     random = {
       source = "hashicorp/random"
